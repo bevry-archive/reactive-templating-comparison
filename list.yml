@@ -1,0 +1,131 @@
+---
+
+# Accepted project fields:
+# name - the project's name
+# github - the user/project part of the github location
+# license - the project's license (or lack of license), see license values below
+# features - an array of features specific to the project, see features values below
+
+# We also accept the following fields if GitHub was not provided (as with github we auto-detect them)
+# website - the project's website if they have one
+# language - the project's language (note, if the entry is closed-source, use "Web" or "App")
+# description - the project's description
+# created_at - the project's creation date in "2010-10-20T13:46:08Z" format
+
+# Possible features values:
+# "two-way-bindings" - use for projects that support a two-way binding
+# "one-way-bindings" - use for projects that support a one-way binding, either from model to view, or view to model
+# "virtual-dom" - use for projects that implement a virtual dom then apply diffs
+# "observeable-driven" - use for projects that rely on observeables on standard javascript objects to detect changes
+# "model-driven" - use for projects that rely on special model get/set/ers to detect changes
+# "html-bindings" - use for projects that that require html to setup the bindings
+# "javascript-bindings" - use for projects that require javascript to setup the bindings
+# "html-events" - allows you to do event bindings in html easily, e.g. on-click="{{handler}}"
+# "html-conditionals" - allows you to only show certain elements if a condition is met
+# "html-expressions" - allows you to do computation in the templating engine
+# "html-decorators" - allows you to modify a value with a decorator
+
+
+# Possible license values:
+# "MIT"
+# "BSD" - use for all variations of BSD
+# "GPL" - use for all variations of GNU General Public License
+# "Public" - use for all variations of the Public Domain (inc. CC0, DWTFYWTPL, WTFPL)
+# "MS-PL" - use for all variations of the Microsoft Public License
+# "SimPL" - use for all variations of the Simple Public License
+# "Apache" - use for all variations of the Apache License
+# "Ruby" - use for all variations of the Ruby License
+# "Perl" - use for all variations of the Perl/Artistic License
+# "EPL" - use for all variations of the Eclipse Public License
+# "CC" - use for all variations of the Creative Commons Licenses (except CC0, that should be Public)
+# "Beer-ware" - use for all variations of the Beer-ware License
+# "Commercial" - use for projects that are sold (shareware) or are closed-source
+# false - use when the license is not revelead
+#
+# If there is another license type that is missing, use its abbreviation and add it here
+
+# If a project is defunct, still keep/add it, this is meant to be a definitive listing
+# and we will fetch in the activity of the project automatically outside of this listing
+
+# Sometime you will see commented out entries with "not a ssg" in them
+# KEEP THESE IN
+# the reason they are here is that people often confuse them with static site generators
+
+
+- name: "Blaze"
+  github: "botanicus/ace"
+  license: false
+
+
+- name: "Ractive"
+  github: "ractivejs/ractive"
+  license: "MIT"
+  features:
+  - "two-way-bindings"  # http://learn.ractivejs.org/two-way-binding/1
+  - "model-driven"  # http://learn.ractivejs.org/hello-world/3
+  - "html-bindings"
+
+
+- name: "Hamlet"
+  github: "inductor-labs/hamlet"
+  license: "MIT"
+  features:
+  - "two-way-bindings"
+  - "javascript-bindings"
+
+
+- name: "React"
+  github: "facebook/react"
+  license: "Apache"
+
+
+
+- name: "Polymer"
+  github: "Polymer/polymer-dev"
+  url: "http://www.polymer-project.org/"
+  license: false
+  features:
+  - "two-way-bindings"
+  - "one-way-bindings"
+  - "observeable-driven"
+  - "html-events"
+  - "html-conditionals"
+  - "html-expressions"
+  - "html-decorators"
+
+
+- name: "Polymer Template Binding"
+  github: "Polymer/TemplateBinding"
+  url: "http://www.polymer-project.org/docs/polymer/databinding-advanced.html"
+  license: false
+  features:
+  - "two-way-bindings"
+  - "one-way-bindings"
+  - "observeable-driven"
+  - "html-conditionals"
+  - "html-expressions"
+
+
+- name: "Mithril"
+  github: "lhorie/mithril.js"
+  license: "MIT"
+
+
+- name: "Pointers"
+  github: "bevry/pointers"
+  license: "MIT"
+  features:
+  - "two-way-bindings"
+  - "one-way-bindings"
+  - "model-driven"
+  - "javascript-bindings"
+  
+  
+- name: "jQuery Smarty"
+  github: "balupton/jquery-smarty"
+  license: "MIT"
+  features:
+  - "one-way-bindings"
+  - "html-bindings"
+  - "html-decorators"
+  
