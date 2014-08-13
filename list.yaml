@@ -25,7 +25,6 @@
 # "html-expressions" - allows you to do computation in the templating engine
 # "html-decorators" - allows you to modify a value with a decorator
 
-
 # Possible license values:
 # "MIT"
 # "BSD" - use for all variations of BSD
@@ -46,10 +45,6 @@
 
 # If a project is defunct, still keep/add it, this is meant to be a definitive listing
 # and we will fetch in the activity of the project automatically outside of this listing
-
-# Sometime you will see commented out entries with "not a ssg" in them
-# KEEP THESE IN
-# the reason they are here is that people often confuse them with static site generators
 
 
 - name: "Blaze"
@@ -77,7 +72,6 @@
 - name: "React"
   github: "facebook/react"
   license: "Apache"
-
 
 
 - name: "Polymer"
